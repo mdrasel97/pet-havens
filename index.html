@@ -43,8 +43,8 @@
     <!-- header section  -->
     <header class="container mx-auto">
         <!-- navbar section  -->
-        <nav>
-            <div class="navbar bg-base-100">
+        <nav class="z-10">
+            <div class="navbar bg-[#FFF9F4] justify-between">
                 <div class="navbar-start">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -64,20 +64,16 @@
                     <ul
                       tabindex="0"
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
+                      <li><a>Find a pet</a></li>
+                      <li><a>Breeds</a></li>
+                      <li><a>Contact us</a></li>
+                      <button class="btn btn-outline hover:bg-yello-primary-bg hover:text-black border-yello-primary">Login</button>
+                    <button class="btn bg-yello-primary-bg">Register</button>
                     </ul>
                   </div>
                   <div class="logo flex items-center gap-2">
                     <img class="w-[30px] md:w[47px]" src="./c1-assets/logo-header.png" alt="">
-                    <a class="btn btn-ghost text-xl">Browse <span class="text-yello-primary">4</span> Pets</a>
+                    <a class="md:text-2xl font-bold">Browse <span class="text-yello-primary">4</span> Pets</a>
                   </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -87,11 +83,8 @@
                     <li><a>Contact us</a></li>
                   </ul>
                 </div>
-                <!-- <div class="navbar-end">
-                  <a class="btn">Button</a>
-                </div> -->
 
-                <div class="navbar-end">
+                <div class="md:navbar-end  lg:flex md:gap-3">
                     <button class="btn btn-ghost btn-circle">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -121,19 +114,107 @@
                             d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                         </svg>
                         <span class="badge badge-xs badge-primary indicator-item"></span>
-                        <button class="btn btn-outline hover:bg-yello-primary-bg hover:text-black border-yello-primary">Login</button>
-                        <button class="btn bg-yello-primary-bg ml-4">Register</button>
+                        <button class="btn btn-outline hover:bg-yello-primary-bg hover:text-black border-yello-primary hidden lg:flex">Login</button>
+                        <button class="btn bg-yello-primary-bg hidden lg:flex">Register</button>
                       </div>
                     </button>
                   </div>
               </div>
         </nav>
 
+        <!-- banner section  -->
+         <section class="md:mt-20">
+            <!-- banner container  -->
+             <div class="h-[550px] relative">
+                <!-- text-content  -->
+                 <div class="absolute  left-0 top-0 p-8 z-10 space-y-4">
+                  <h1 class="adlam-display text-2xl md:text-5xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+                 <p>Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+                 <button class="btn bg-yello-primary-bg">Find a pet</button>
+                </div>
+                
+                <!-- iamge content  -->
+                <div class="absolute bottom-0 right-0 w-11/12 md:w-5/6">
+                   <img class=""  src="./c1-assets/cat-big.png" alt="" class="w-full h-auto">
+                </div>
+             
+            </div>
+         </section>
+
     </header>
 
     <!-- main section  -->
-     <main>
+     <main class="container mx-auto">
+        <!-- categories section  -->
+        <section class="my-28">
+            <h2 class="text-3xl font-bold px-5 md:px-1">Browse By Categories</h2>  
+            <!-- categori container  -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 px-4 md:px-1 mt-10">
+              <!-- categori card-1 -->
+               <div class="bg-[#F9DF8A] flex flex-col py-10 items-center space-y-5 rounded-lg">
+                <img src="./c1-assets/dog-cartoon.png" alt="" class="bg-white p-4 rounded-full">
+                <h4 class="font-bold">Dog</h4>
+                <p>3 items</p>
+               </div>
+              <!-- categori card-2 -->
+               <div class="bg-[#F9DF8A] flex flex-col py-10 items-center space-y-5 rounded-lg">
+                <img src="./c1-assets/fish-cartoon.png" alt="" class="bg-white p-4 rounded-full">
+                <h4 class="font-bold">Fish</h4>
+                <p>3 items</p>
+               </div>
+              <!-- categori card-3 -->
+               <div class="bg-[#F9DF8A] flex flex-col py-10 items-center space-y-5 rounded-lg">
+                <img src="./c1-assets/cat-cartoon.png" alt="" class="bg-white p-4 rounded-full">
+                <h4 class="font-bold">Cat</h4>
+                <p>3 items</p>
+               </div>
+              <!-- categori card-4 -->
+               <div class="bg-[#F9DF8A] flex flex-col py-10 items-center space-y-5 rounded-lg">
+                <img src="./c1-assets/bird-cartoon.png" alt="" class="bg-white p-4 rounded-full">
+                <h4 class="font-bold">Birds</h4>
+                <p>3 items</p>
+               </div>
+              <!-- categori card-5 -->
+               <div class="bg-[#F9DF8A] flex flex-col py-10 items-center space-y-5 rounded-lg">
+                <img src="./c1-assets/dog-cartoon.png" alt="" class="bg-white p-4 rounded-full">
+                <h4 class="font-bold">Dog</h4>
+                <p>3 items</p>
+               </div>
+              <!-- categori card-6 -->
+               <div class="bg-[#F9DF8A] flex flex-col py-10 items-center space-y-5 rounded-lg">
+                <img src="./c1-assets/rabbit-cartoon.png" alt="" class="bg-white p-4 rounded-full">
+                <h4 class="font-bold">Rabit</h4>
+                <p>3 items</p>
+               </div>
 
+            </div>
+        </section>
+
+        <!-- Trending Pet Products -->
+         <section class="my-20 bg-red-200 py-32">
+          <h2 class="text-3xl font-bold px-5 md:px-1">Trending Pet Products</h2>
+          <!-- pet product container -->
+           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-2 lg:grid-rows-3 bg-red-400 gap-5">
+            <!-- pet card-1  -->
+            <div class="row-span-3 bg-[#F9DF8A] p-10">
+              <h3 class="font-bold">T-shirt For DOgs</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio neque nam distinctio eveniet</p>
+              <button>shop Now</button>
+              <div class="">
+                <img src="./c1-assets/cute-pet-mid.png" alt="" class="w-5/6">
+              </div>
+            </div>
+            <div class="row-span-1 bg-green-500 p-10">1</div>
+            <div class="row-span-1 bg-green-500 p-10">1</div>
+            <div class="row-span-1 bg-green-500 p-10">1</div>
+            <div class="row-span-1 bg-green-500 p-10">1</div>
+            <div class="row-span-1 bg-green-500 p-10">1</div>
+            <div class="row-span-1 bg-green-500 p-10">1</div>
+            <div class="row-span-1 bg-green-500 p-10">1</div>
+            <div class="row-span-1 bg-green-500 p-10">1</div>
+            <div class="row-span-1 bg-green-500 p-10">1</div>
+           </div>
+         </section>
      </main>
 
      <!-- footer section  -->
